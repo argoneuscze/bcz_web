@@ -1,6 +1,12 @@
+import Link from "next/link";
+
+import css from "../styles/style.scss";
+
 const Index = () => (
   <div>
-    <p>Hello World</p>
+    <Link href="/travel">
+      <button>Hello World</button>
+    </Link>
   </div>
 );
 
