@@ -13,6 +13,10 @@ app.prepare()
       return handle(req, res);
     });
 
+    server.post("/api/register", (req, res) => {
+      console.log(req);
+    }); // TODO move to API server?
+
     server.listen(3000, (err) => {
       if (err) throw err;
       console.log("> Ready on http://localhost:3000");
